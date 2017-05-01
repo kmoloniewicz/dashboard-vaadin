@@ -2,3 +2,6 @@
 language: java
 # install
 install: mvn install
+# email notifications
+notifications:
+  email: false
