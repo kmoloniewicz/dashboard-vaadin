@@ -1,7 +1,6 @@
-# this is a java project using maven
-language: java
-# install
-install: mvn install
-# email notifications
-notifications:
-  email: false
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.mycompany.app</groupId>
+  <artifactId>my-app</artifactId>
+  <version>1</version>
+</project>
