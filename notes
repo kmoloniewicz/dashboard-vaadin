@@ -1,2 +1,15 @@
-<div id="name">
-driver.findElement(By.id("name"));
+SCENARIO 1: Jako zarejestrowany użytkownik mogę zalogować się do systemu
+
+GIVEN Strona logowania jest otwarta
+WHEN Podam swoje dane do logowania
+AND Nacisnę przycisk 'Sign In'
+THEN Zostaję zalogowany do systemu
+AND Strona główna jest wyświetlona
+
+
+SCENARIO 2: Jako zalogowany użytkownik mam możliwość edycji swojego profilu
+
+GIVEN Użytkownik jest zalogowany do systemu
+WHEN Wybierze opcję 'Edit Profile'
+THEN Okno edycji profilu zostaje otwarte
+AND Pola mogą być edytowane
