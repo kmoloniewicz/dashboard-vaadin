@@ -1,0 +1,11 @@
+ language: java
+ # install
+ install: mvn install
+ # Sauce Labs
+ addons:
+ sauce_connect:
+ username: "Your Sauce Labs username"
+ access_key: "Your Sauce Labs access key"
+ # email notifications
+ notifications:
+ email: false
