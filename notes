@@ -1,15 +1,15 @@
-SCENARIO 1: Jako zarejestrowany użytkownik mogę zalogować się do systemu
+USER STORY 1: Jako zarejestrowany użytkownik mogę zalogować się do systemu
 
-GIVEN Strona logowania jest otwarta
-WHEN Podam swoje dane do logowania
-AND Nacisnę przycisk 'Sign In'
-THEN Zostaję zalogowany do systemu
-AND Strona główna jest wyświetlona
+AC1 Na stronie logowania wyświetlone są natępujące pola tekstowe: Username, Password
+AC2 Logowanie następuje po naciśnięciu guzika "Sign In"
+AC3 Użytkownik ma możliwość zapamiętania danych logowania poprzez zaznaczenie pola wyboru "Remember me"
+AC4 Po podaniu poprawnych danych użytkownika zostaje on zalogowany do systemu
 
 
-SCENARIO 2: Jako zalogowany użytkownik mam możliwość edycji swojego profilu
+USER STORY 2: Jako zalogowany użytkownik mam możliwość edycji swojego profilu
 
-GIVEN Użytkownik jest zalogowany do systemu
-WHEN Wybierze opcję 'Edit Profile'
-THEN Okno edycji profilu zostaje otwarte
-AND Pola mogą być edytowane
+AC1 NPo kliknięciu profilu użytkownika na stronie głównej systemu wyświetlona zostaje rozwijana lista z opcją "Edit Profile"
+AC2 Po wybraniu opcji "Edit Profile" otwarte zostaje okno z możliwością edycji danych użytkownika
+AC3 Dane które mogą zostać zmodyfikowane to: imię, nazwisko, płeć, tytuł, adres email, lokalizacja, telefon
+AC4 Dostępne jest pole wyboru umożliwiające subskrybcję newslettera z rozwijaną listą częstotliwości: Daily, Weekly, Monthly
+AC5 Wszystkie dane zostają zapisane po kliknięciu guzika "OK" 
