@@ -1,15 +1,13 @@
-USER STORY 1: Jako zarejestrowany użytkownik mogę zalogować się do systemu
-
-AC1 Na stronie logowania wyświetlone są natępujące pola tekstowe: Username, Password
-AC2 Logowanie następuje po naciśnięciu guzika "Sign In"
-AC3 Użytkownik ma możliwość zapamiętania danych logowania poprzez zaznaczenie pola wyboru "Remember me"
-AC4 Po podaniu poprawnych danych użytkownika zostaje on zalogowany do systemu
-
-
-USER STORY 2: Jako zalogowany użytkownik mam możliwość edycji swojego profilu
-
-AC1 NPo kliknięciu profilu użytkownika na stronie głównej systemu wyświetlona zostaje rozwijana lista z opcją "Edit Profile"
-AC2 Po wybraniu opcji "Edit Profile" otwarte zostaje okno z możliwością edycji danych użytkownika
-AC3 Dane które mogą zostać zmodyfikowane to: imię, nazwisko, płeć, tytuł, adres email, lokalizacja, telefon
-AC4 Dostępne jest pole wyboru umożliwiające subskrybcję newslettera z rozwijaną listą częstotliwości: Daily, Weekly, Monthly
-AC5 Wszystkie dane zostają zapisane po kliknięciu guzika "OK" 
+<dependencies>
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>6.1.1</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>2.45.0</version>
+    </dependency>
+</dependencies>
