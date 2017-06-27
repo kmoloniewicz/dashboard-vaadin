@@ -1,13 +1,10 @@
-<dependencies>
-    <dependency>
-        <groupId>org.testng</groupId>
-        <artifactId>testng</artifactId>
-        <version>6.1.1</version>
-        <scope>test</scope>
-    </dependency>
-    <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>2.45.0</version>
-    </dependency>
-</dependencies>
+	@Test 
+	public void loginTest() {
+		driver.findElement(By.id("gwt-uid-4")).sendKeys("Selenium");
+		driver.findElement(By.id("gwt-uid-6")).sendKeys("password");
+		driver.findElement(By.xpath("//*[@id='dashboard-1047860588']")).click();
+		
+		assert(driver.findElement(By.id("dashboard-title"))
+				.getText().equals("Dashboard"));
+		
+	}
